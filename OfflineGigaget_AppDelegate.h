@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "CoreLogic.h"
 
 @interface OfflineGigaget_AppDelegate : NSObject 
 {
@@ -15,6 +16,7 @@
     NSPersistentStoreCoordinator *persistentStoreCoordinator;
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;
+    CoreLogic *core;
 }
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
@@ -22,6 +24,7 @@
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain) CoreLogic *core;
 
 - (IBAction)saveAction:sender;
 

@@ -10,7 +10,19 @@
 
 @implementation OfflineGigaget_AppDelegate
 
-@synthesize window;
+@synthesize window,core;
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
+    NSLog(@"did finish launching");
+    CoreLogic *aCore = [[CoreLogic alloc] init];
+    self.core = aCore;
+    self.core.window = window;
+    
+    [self.core setup];
+    
+    [aCore release];
+}
+
 
 /**
     Returns the support directory for the application, used to store the Core Data
