@@ -1,5 +1,12 @@
 // !$*UTF8*$!
 {
+	089C165DFE840E0CC02AAC07 /* English */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1615, 196}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 44}";
+		};
+	};
 	135910CF130685C5007625C5 /* OfflineGigaget */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
@@ -7,7 +14,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 0;
+		breakpointsEnabled = 1;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -16,6 +23,7 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -23,9 +31,13 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = OfflineGigaget;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
+		variableFormatDictionary = {
+		};
 	};
 	135910E4130685D8007625C5 /* Source Control */ = {
 		isa = PBXSourceControlManager;
@@ -41,10 +53,244 @@
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
+	135910EE13068758007625C5 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* OfflineGigaget-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	135911091306886A007625C5 /* CoreLogic.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1615, 364}}";
+			sepNavSelRange = "{690, 14}";
+			sepNavVisRange = "{0, 722}";
+		};
+	};
+	1359110A1306886A007625C5 /* CoreLogic.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {812, 1001}}";
+			sepNavSelRange = "{861, 0}";
+			sepNavVisRange = "{0, 2178}";
+		};
+	};
+	1359110F13068953007625C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 089C165DFE840E0CC02AAC07 /* English */;
+		name = "InfoPlist.strings: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 44;
+		vrLoc = 0;
+	};
+	1359111313068953007625C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 29B97316FDCFA39411CA2CEA /* main.m */;
+		name = "main.m: 13";
+		rLen = 17;
+		rLoc = 197;
+		rType = 0;
+		vrLen = 247;
+		vrLoc = 0;
+	};
+	1359111413068953007625C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* OfflineGigaget_Prefix.pch */;
+		name = "OfflineGigaget_Prefix.pch: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 159;
+		vrLoc = 0;
+	};
+	1359112213068A0E007625C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1359110A1306886A007625C5 /* CoreLogic.m */;
+		name = "CoreLogic.m: 17";
+		rLen = 0;
+		rLoc = 458;
+		rType = 0;
+		vrLen = 301;
+		vrLoc = 0;
+	};
+	1359112313068A0E007625C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 135911091306886A007625C5 /* CoreLogic.h */;
+		name = "CoreLogic.h: 12";
+		rLen = 8;
+		rLoc = 242;
+		rType = 0;
+		vrLen = 200;
+		vrLoc = 0;
+	};
+	135911EC13068BBD007625C5 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* OfflineGigaget_AppDelegate.m */;
+		name = "OfflineGigaget_AppDelegate.m: 24";
+		rLen = 0;
+		rLoc = 524;
+		rType = 0;
+		vrLen = 1553;
+		vrLoc = 0;
+	};
+	1359123D13068FC3007625C5 /* MainWebFrameLoadDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {812, 847}}";
+			sepNavSelRange = "{398, 0}";
+			sepNavVisRange = "{0, 398}";
+		};
+	};
+	1359123E13068FC3007625C5 /* MainWebFrameLoadDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {964, 847}}";
+			sepNavSelRange = "{826, 68}";
+			sepNavVisRange = "{0, 1631}";
+		};
+	};
+	137A791F1320CD710040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 32CA4F630368D1EE00C91783 /* OfflineGigaget_Prefix.pch */;
+		name = "OfflineGigaget_Prefix.pch: 8";
+		rLen = 0;
+		rLoc = 159;
+		rType = 0;
+		vrLen = 159;
+		vrLoc = 0;
+	};
+	137A792A1320D3EC0040AD46 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* OfflineGigaget-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	137A793D1320D51E0040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280C06725ACE000B614F /* OfflineGigaget_AppDelegate.m */;
+		name = "OfflineGigaget_AppDelegate.m: 26";
+		rLen = 0;
+		rLoc = 526;
+		rType = 0;
+		vrLen = 2308;
+		vrLoc = 5678;
+	};
+	137A79701320D8680040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 135911091306886A007625C5 /* CoreLogic.h */;
+		name = "CoreLogic.h: 21";
+		rLen = 24;
+		rLoc = 546;
+		rType = 0;
+		vrLen = 647;
+		vrLoc = 0;
+	};
+	137A79711320D8680040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1359123E13068FC3007625C5 /* MainWebFrameLoadDelegate.m */;
+		name = "MainWebFrameLoadDelegate.m: 26";
+		rLen = 68;
+		rLoc = 826;
+		rType = 0;
+		vrLen = 1631;
+		vrLoc = 0;
+	};
+	137A797A1320D93E0040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1359123D13068FC3007625C5 /* MainWebFrameLoadDelegate.h */;
+		name = "MainWebFrameLoadDelegate.h: 18";
+		rLen = 0;
+		rLoc = 398;
+		rType = 0;
+		vrLen = 398;
+		vrLoc = 0;
+	};
+	137A79A91320DBA90040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280B06725ACE000B614F /* OfflineGigaget_AppDelegate.h */;
+		name = "OfflineGigaget_AppDelegate.h: 21";
+		rLen = 1;
+		rLoc = 456;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	137A79AA1320DBA90040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1359110A1306886A007625C5 /* CoreLogic.m */;
+		name = "CoreLogic.m: 28";
+		rLen = 0;
+		rLoc = 861;
+		rType = 0;
+		vrLen = 2157;
+		vrLoc = 0;
+	};
+	137A79B21320DBCA0040AD46 /* CoreLogic.m:39 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1359110A1306886A007625C5 /* CoreLogic.m */;
+		functionName = "-checkClipBoard";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 39;
+		location = OfflineGigaget;
+		modificationTime = 320921456.430308;
+		originalNumberOfMultipleMatches = 1;
+		state = 2;
+	};
+	137A79F31320DFF80040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1359110A1306886A007625C5 /* CoreLogic.m */;
+		name = "CoreLogic.m: 28";
+		rLen = 0;
+		rLoc = 861;
+		rType = 0;
+		vrLen = 2178;
+		vrLoc = 0;
+	};
+	137A79F41320DFF80040AD46 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280B06725ACE000B614F /* OfflineGigaget_AppDelegate.h */;
+		name = "OfflineGigaget_AppDelegate.h: 9";
+		rLen = 24;
+		rLoc = 149;
+		rType = 0;
+		vrLen = 865;
+		vrLoc = 0;
+	};
+	13E4AC591318FC2100001FB7 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 77C8280B06725ACE000B614F /* OfflineGigaget_AppDelegate.h */;
+		name = "OfflineGigaget_AppDelegate.h: 9";
+		rLen = 24;
+		rLoc = 149;
+		rType = 0;
+		vrLen = 866;
+		vrLoc = 0;
+	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 135910CF130685C5007625C5 /* OfflineGigaget */;
 		activeTarget = 8D1107260486CEB800E47090 /* OfflineGigaget */;
+		addToTargets = (
+			8D1107260486CEB800E47090 /* OfflineGigaget */,
+		);
+		breakpoints = (
+			137A79B21320DBCA0040AD46 /* CoreLogic.m:39 */,
+		);
 		codeSenseManager = 135910E5130685D8007625C5 /* Code sense */;
 		executables = (
 			135910CF130685C5007625C5 /* OfflineGigaget */,
@@ -55,9 +301,9 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					364,
+					1114,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -72,11 +318,71 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 319194565;
-			PBXWorkspaceStateSaveDate = 319194565;
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					1128,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 320914346;
+			PBXWorkspaceStateSaveDate = 320914346;
+		};
+		perUserProjectItems = {
+			135910EE13068758007625C5 /* PlistBookmark */ = 135910EE13068758007625C5 /* PlistBookmark */;
+			1359110F13068953007625C5 /* PBXTextBookmark */ = 1359110F13068953007625C5 /* PBXTextBookmark */;
+			1359111313068953007625C5 /* PBXTextBookmark */ = 1359111313068953007625C5 /* PBXTextBookmark */;
+			1359111413068953007625C5 /* PBXTextBookmark */ = 1359111413068953007625C5 /* PBXTextBookmark */;
+			1359112213068A0E007625C5 /* PBXTextBookmark */ = 1359112213068A0E007625C5 /* PBXTextBookmark */;
+			1359112313068A0E007625C5 /* PBXTextBookmark */ = 1359112313068A0E007625C5 /* PBXTextBookmark */;
+			135911EC13068BBD007625C5 /* PBXTextBookmark */ = 135911EC13068BBD007625C5 /* PBXTextBookmark */;
+			137A791F1320CD710040AD46 /* PBXTextBookmark */ = 137A791F1320CD710040AD46 /* PBXTextBookmark */;
+			137A792A1320D3EC0040AD46 /* PlistBookmark */ = 137A792A1320D3EC0040AD46 /* PlistBookmark */;
+			137A793D1320D51E0040AD46 /* PBXTextBookmark */ = 137A793D1320D51E0040AD46 /* PBXTextBookmark */;
+			137A79701320D8680040AD46 /* PBXTextBookmark */ = 137A79701320D8680040AD46 /* PBXTextBookmark */;
+			137A79711320D8680040AD46 /* PBXTextBookmark */ = 137A79711320D8680040AD46 /* PBXTextBookmark */;
+			137A797A1320D93E0040AD46 /* PBXTextBookmark */ = 137A797A1320D93E0040AD46 /* PBXTextBookmark */;
+			137A79A91320DBA90040AD46 /* PBXTextBookmark */ = 137A79A91320DBA90040AD46 /* PBXTextBookmark */;
+			137A79AA1320DBA90040AD46 /* PBXTextBookmark */ = 137A79AA1320DBA90040AD46 /* PBXTextBookmark */;
+			137A79F31320DFF80040AD46 /* PBXTextBookmark */ = 137A79F31320DFF80040AD46 /* PBXTextBookmark */;
+			137A79F41320DFF80040AD46 /* PBXTextBookmark */ = 137A79F41320DFF80040AD46 /* PBXTextBookmark */;
+			13E4AC591318FC2100001FB7 /* PBXTextBookmark */ = 13E4AC591318FC2100001FB7 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 135910E4130685D8007625C5 /* Source Control */;
 		userBuildSettings = {
+		};
+	};
+	29B97316FDCFA39411CA2CEA /* main.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1408, 849}}";
+			sepNavSelRange = "{197, 17}";
+			sepNavVisRange = "{0, 247}";
+		};
+	};
+	32CA4F630368D1EE00C91783 /* OfflineGigaget_Prefix.pch */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {812, 824}}";
+			sepNavSelRange = "{159, 0}";
+			sepNavVisRange = "{0, 159}";
+		};
+	};
+	77C8280B06725ACE000B614F /* OfflineGigaget_AppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {691, 847}}";
+			sepNavSelRange = "{149, 24}";
+			sepNavVisRange = "{0, 865}";
+		};
+	};
+	77C8280C06725ACE000B614F /* OfflineGigaget_AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1202, 2925}}";
+			sepNavSelRange = "{526, 0}";
+			sepNavVisRange = "{5678, 2308}";
 		};
 	};
 	8D1107260486CEB800E47090 /* OfflineGigaget */ = {

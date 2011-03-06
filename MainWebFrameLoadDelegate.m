@@ -23,9 +23,9 @@
     [[webView windowScriptObject] evaluateWebScript:@"submitForm()"];
     
 }
-- (void) handleURLDownload:(WebView *)webView{
+- (void) handleURLDownload:(WebView *)webView forURL:(NSString *)url{
     [[webView windowScriptObject] evaluateWebScript:@"add_task_new(0);"];
-    [[webView windowScriptObject] evaluateWebScript:@"document.querySelector('#task_url').value='magnet:?xt=urn:btih:cb9921bf4e9ac02cd294e22f508332152b5d72c6&tr.0=http://tracker.ktxp.com:6868/announce&tr.1=udp://tracker.ktxp.com:6868/announce'"];
+    [[webView windowScriptObject] evaluateWebScript:[NSString stringWithFormat: @"document.querySelector('#task_url').value='%@'",url]];
 }
 
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame{
@@ -35,7 +35,7 @@
         [self handleLogin:sender];
     }
     if ([currentURL hasPrefix:@"http://dynamic.lixian.vip.xunlei.com/user_task"]){
-        [self handleURLDownload:sender];
+        //[self handleURLDownload:sender];
     }
 }
 

@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1359110B1306886A007625C5 /* CoreLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1359110A1306886A007625C5 /* CoreLogic.m */; };
+		1359113213068AC2007625C5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1359113113068AC2007625C5 /* WebKit.framework */; };
+		1359123F13068FC3007625C5 /* MainWebFrameLoadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1359123E13068FC3007625C5 /* MainWebFrameLoadDelegate.m */; };
+		137A79171320CAEE0040AD46 /* xunlei.icns in Resources */ = {isa = PBXBuildFile; fileRef = 137A79161320CAEE0040AD46 /* xunlei.icns */; };
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
 		770B37ED0679A11B001EADE2 /* OfflineGigaget_DataModel.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 770B37EC0679A11B001EADE2 /* OfflineGigaget_DataModel.xcdatamodel */; };
 		77C8280E06725ACE000B614F /* OfflineGigaget_AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C8280C06725ACE000B614F /* OfflineGigaget_AppDelegate.m */; };
@@ -18,6 +22,12 @@
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		135911091306886A007625C5 /* CoreLogic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLogic.h; sourceTree = "<group>"; };
+		1359110A1306886A007625C5 /* CoreLogic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLogic.m; sourceTree = "<group>"; };
+		1359113113068AC2007625C5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		1359123D13068FC3007625C5 /* MainWebFrameLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWebFrameLoadDelegate.h; sourceTree = "<group>"; };
+		1359123E13068FC3007625C5 /* MainWebFrameLoadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWebFrameLoadDelegate.m; sourceTree = "<group>"; };
+		137A79161320CAEE0040AD46 /* xunlei.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = xunlei.icns; path = Resources/xunlei.icns; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -37,6 +47,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				1359113213068AC2007625C5 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,8 +57,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				77C8280B06725ACE000B614F /* OfflineGigaget_AppDelegate.h */,
-				77C8280C06725ACE000B614F /* OfflineGigaget_AppDelegate.m */,
+				1359123C13068FB3007625C5 /* Delegates */,
+				1359110813068850007625C5 /* Core */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -55,6 +66,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1359113113068AC2007625C5 /* WebKit.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -68,6 +80,26 @@
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 			);
 			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1359110813068850007625C5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				77C8280B06725ACE000B614F /* OfflineGigaget_AppDelegate.h */,
+				77C8280C06725ACE000B614F /* OfflineGigaget_AppDelegate.m */,
+				135911091306886A007625C5 /* CoreLogic.h */,
+				1359110A1306886A007625C5 /* CoreLogic.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1359123C13068FB3007625C5 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1359123D13068FC3007625C5 /* MainWebFrameLoadDelegate.h */,
+				1359123E13068FC3007625C5 /* MainWebFrameLoadDelegate.m */,
+			);
+			name = Delegates;
 			sourceTree = "<group>";
 		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
@@ -103,6 +135,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				137A79161320CAEE0040AD46 /* xunlei.icns */,
 				8D1107310486CEB800E47090 /* OfflineGigaget-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				2F7446970DB6B7EA00F9684A /* MainMenu.xib */,
@@ -154,7 +187,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			buildConfigurationList = 26FC0A880875C7B200E6366F /* Build configuration list for PBXProject "OfflineGigaget" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -179,6 +212,7 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */,
+				137A79171320CAEE0040AD46 /* xunlei.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +226,8 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				77C8280E06725ACE000B614F /* OfflineGigaget_AppDelegate.m in Sources */,
 				770B37ED0679A11B001EADE2 /* OfflineGigaget_DataModel.xcdatamodel in Sources */,
+				1359110B1306886A007625C5 /* CoreLogic.m in Sources */,
+				1359123F13068FC3007625C5 /* MainWebFrameLoadDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +290,7 @@
 		26FC0A890875C7B200E6366F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -271,6 +307,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 			};

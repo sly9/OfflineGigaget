@@ -1,15 +1,18 @@
 TOfflineGigaget
 v7
 r0
-t319194572.604928
+t320921456.230030
 cCheck dependencies
 cProcessInfoPlistFile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Info.plist OfflineGigaget-Info.plist
 cCopyStringsFile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
 cCompileXIB /Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib
-cProcessPCH /var/folders/q3/q3jSkYx2G2i+Ykde2l4tSU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch OfflineGigaget_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCpResource build/Debug/OfflineGigaget.app/Contents/Resources/xunlei.icns Resources/xunlei.icns
+cProcessPCH /var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch OfflineGigaget_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cDataModelCompile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/OfflineGigaget_DataModel.mom /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel
 cCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/main.o /Users/sly/Dropbox/work/OfflineGigaget/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget_AppDelegate.o /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/CoreLogic.o /Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/MainWebFrameLoadDelegate.o /Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget normal x86_64
 cTouch /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app
 
@@ -23,10 +26,34 @@ c0000000040C4AA6800000000000001E5
 t1086630504
 s485
 
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/WebKit.framework/Headers/WebKit.h
+c000000004C23CD6E0000000000000957
+t1277414766
+s2391
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/WebKit.framework/WebKit
+c000000004CAA7406000000000008DF08
+t1286239238
+s581384
+
 N/System/Library/Frameworks/Cocoa.framework/Cocoa
-c000000004A1F2D63000000000000A5E0
-t1243557219
+c000000004C6131E7000000000000A5E0
+t1281438183
 s42464
+
+N/Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.h
+c000000004D70A7C500000000000002D7
+t1299228613
+s727
+i<Cocoa/Cocoa.h>
+i<WebKit/WebKit.h>
+i"MainWebFrameLoadDelegate.h"
+
+N/Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.m
+c000000004D70A7ED00000000000009C4
+t1299228653
+s2500
+i"CoreLogic.h"
 
 N/Users/sly/Dropbox/work/OfflineGigaget/English.lproj/InfoPlist.strings
 c000000004D564E45000000000000005A
@@ -34,25 +61,39 @@ t1297501765
 s90
 
 N/Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib
-c000000004D564E450000000000020306
-t1297501765
-s131846
+c000000004D565DFD00000000000282F0
+t1297505789
+s164592
+
+N/Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.h
+c000000004D70A0E4000000000000018E
+t1299226852
+s398
+i<Cocoa/Cocoa.h>
+i<WebKit/WebKit.h>
+
+N/Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.m
+c000000004D709D9A000000000000065F
+t1299226010
+s1631
+i"MainWebFrameLoadDelegate.h"
 
 N/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.h
-c000000004D564E450000000000000308
-t1297501765
-s776
+c000000004D70A3A40000000000000361
+t1299227556
+s865
 i<Cocoa/Cocoa.h>
+i"CoreLogic.h"
 
 N/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m
-c000000004D564E450000000000001E26
-t1297501765
-s7718
+c000000004D5652DE0000000000001F37
+t1297502942
+s7991
 i"OfflineGigaget_AppDelegate.h"
 
 N/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel
-c000000004D564E450000000000000088
-t1297501765
+c000000004D632F450000000000000088
+t1298345797
 s136
 
 N/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch
@@ -61,45 +102,62 @@ t1297501765
 s159
 i<Cocoa/Cocoa.h>
 
+N/Users/sly/Dropbox/work/OfflineGigaget/Resources/xunlei.icns
+c000000004D70931A0000000000038C3F
+t1299223322
+s232511
+
 N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app
-t1297501772
+t1299228654
 s102
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Info.plist
-t1297501767
-s907
+t1299225477
+s1232
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget
-t1297501772
-s22344
+t1299228654
+s36056
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/PkgInfo
-t1297501767
+t1299225477
 s8
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj/InfoPlist.strings
-t1297501767
+t1297505770
 s90
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj/MainMenu.nib
-t1297501768
-s29958
+t1297505794
+s29960
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/OfflineGigaget_DataModel.mom
-t1297501772
+t1299221562
 s488
 
+N/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/xunlei.icns
+t1299223437
+s232511
+
+N/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/CoreLogic.o
+t1299228654
+s33504
+
+N/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/MainWebFrameLoadDelegate.o
+t1299226854
+s18812
+
 N/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget.LinkFileList
-c000000004D564E47000000000000010A
-t1297501767
-s266
+c000000004D56584A0000000000000217
+t1297504330
+s535
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget_AppDelegate.o
-t1297501772
-s41944
+t1299228654
+s45848
 
 N/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/main.o
-t1297501772
+t1299221562
 s4992
 
 N/Users/sly/Dropbox/work/OfflineGigaget/main.m
@@ -108,22 +166,56 @@ t1297501765
 s247
 i<Cocoa/Cocoa.h>
 
+N/var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch
+t1299221562
+s54306576
+
 N/var/folders/q3/q3jSkYx2G2i+Ykde2l4tSU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch
 t1297501772
 s54306576
 
+N/var/folders/v0/cxxgjf7h33q+3k08n053csf7++++fn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch
+t2
+s0
+
 NOfflineGigaget-Info.plist
-c000000004D564E4500000000000003F3
-t1297501765
-s1011
+c000000004D709B8200000000000004FF
+t1299225474
+s1279
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies319194567#319194567#0(0"0(0#1#0"29836824280170608#0"0#
+lSLF07#2@18"Check dependencies320921456#320921456#0(0"0(0#1#0"8671474368#0"0#
+
+CCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/CoreLogic.o /Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s320921453.773682
+e320921454.173474
+r1
+xCompileC
+xbuild/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/CoreLogic.o
+x/Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@58"Compile /Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.m320921453#320921454#0(0"0(0#0#50"/Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.m8654054176#1173"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -include /var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch -c /Users/sly/Dropbox/work/OfflineGigaget/CoreLogic.m -o /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/CoreLogic.o0#
+
+CCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/MainWebFrameLoadDelegate.o /Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s320919653.981612
+e320919654.233514
+r1
+xCompileC
+xbuild/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/MainWebFrameLoadDelegate.o
+x/Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.m320919653#320919654#0(0"0(0#0#65"/Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.m8612136320#1203"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -include /var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch -c /Users/sly/Dropbox/work/OfflineGigaget/MainWebFrameLoadDelegate.m -o /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/MainWebFrameLoadDelegate.o0#
 
 CCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget_AppDelegate.o /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s319194572.304784
-e319194572.481395
+s320921453.772799
+e320921454.015649
 r1
 xCompileC
 xbuild/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget_AppDelegate.o
@@ -132,11 +224,11 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m319194572#319194572#0(0"0(0#0#67"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m8598873152#1207"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -include /var/folders/q3/q3jSkYx2G2i+Ykde2l4tSU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch -c /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m -o /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget_AppDelegate.o0#
+lSLF07#2@75"Compile /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m320921453#320921454#0(0"0(0#0#67"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m8656805216#1207"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -include /var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch -c /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_AppDelegate.m -o /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget_AppDelegate.o0#
 
 CCompileC build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/main.o /Users/sly/Dropbox/work/OfflineGigaget/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
-s319194572.304116
-e319194572.440102
+s320914362.478800
+e320914362.946890
 r1
 xCompileC
 xbuild/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/main.o
@@ -145,52 +237,74 @@ xnormal
 xx86_64
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@53"Compile /Users/sly/Dropbox/work/OfflineGigaget/main.m319194572#319194572#0(0"0(0#0#45"/Users/sly/Dropbox/work/OfflineGigaget/main.m8606653024#1163"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -include /var/folders/q3/q3jSkYx2G2i+Ykde2l4tSU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch -c /Users/sly/Dropbox/work/OfflineGigaget/main.m -o /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/main.o0#
+lSLF07#2@53"Compile /Users/sly/Dropbox/work/OfflineGigaget/main.m320914362#320914362#0(0"0(0#0#45"/Users/sly/Dropbox/work/OfflineGigaget/main.m8612114624#1163"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -include /var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch -c /Users/sly/Dropbox/work/OfflineGigaget/main.m -o /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/main.o0#
 
 CCompileXIB /Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib
-s319194567.930059
-e319194568.372338
+s319198593.873886
+e319198594.166523
 r1
 xCompileXIB
 x/Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib
-lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib319194567#319194568#0(0"0(0#0#65"/Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib8606915520#371"    cd /Users/sly/Dropbox/work/OfflineGigaget    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj/MainMenu.nib /Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib319198593#319198594#0(0"0(0#0#65"/Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib8654181152#371"    cd /Users/sly/Dropbox/work/OfflineGigaget    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj/MainMenu.nib /Users/sly/Dropbox/work/OfflineGigaget/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
 
 CCopyStringsFile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj/InfoPlist.strings English.lproj/InfoPlist.strings
-s319194567.928121
-e319194567.997414
+s319198570.517357
+e319198570.646983
 r1
 xCopyStringsFile
 x/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj/InfoPlist.strings
 xEnglish.lproj/InfoPlist.strings
-lSLF07#2@36"Copy English.lproj/InfoPlist.strings319194567#319194567#0(0"0(0#0#70"/Users/sly/Dropbox/work/OfflineGigaget/English.lproj/InfoPlist.strings8607244224#373"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj0#
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings319198570#319198570#0(0"0(0#0#70"/Users/sly/Dropbox/work/OfflineGigaget/English.lproj/InfoPlist.strings8666731392#373"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-16 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/English.lproj0#
+
+CCpResource build/Debug/OfflineGigaget.app/Contents/Resources/xunlei.icns Resources/xunlei.icns
+s320916237.246286
+e320916237.271237
+r1
+xCpResource
+xbuild/Debug/OfflineGigaget.app/Contents/Resources/xunlei.icns
+xResources/xunlei.icns
+lSLF07#2@26"Copy Resources/xunlei.icns320916237#320916237#0(0"0(0#0#60"/Users/sly/Dropbox/work/OfflineGigaget/Resources/xunlei.icns8613390336#358"    cd /Users/sly/Dropbox/work/OfflineGigaget    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/sly/Dropbox/work/OfflineGigaget/Resources/xunlei.icns /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources0#
 
 CDataModelCompile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/OfflineGigaget_DataModel.mom /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel
-s319194572.303469
-e319194572.340778
+s320914362.478130
+e320914362.641298
 r1
 xDataModelCompile
 x/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/OfflineGigaget_DataModel.mom
 x/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel
-lSLF07#2@83"Compile /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel319194572#319194572#0(0"0(0#0#75"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel8603537248#297"    cd /Users/sly/Dropbox/work/OfflineGigaget    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/OfflineGigaget_DataModel.mom0#
+lSLF07#2@83"Compile /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel320914362#320914362#0(0"0(0#0#75"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel8611359136#297"    cd /Users/sly/Dropbox/work/OfflineGigaget    /Developer/usr/bin/momc -XD_MOMC_TARGET_VERSION=10.6 /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_DataModel.xcdatamodel /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Resources/OfflineGigaget_DataModel.mom0#
 
 CLd /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget normal x86_64
-s319194572.481475
-e319194572.601058
+s320921454.173550
+e320921454.261472
 r1
 xLd
 x/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget
 xnormal
 xx86_64
-lSLF07#2@104"Link /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget319194572#319194572#0(0"0(0#0#0"8597090688#577"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -filelist /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -o /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget0#
+lSLF07#2@104"Link /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget320921454#320921454#0(0"0(0#0#0"8670278656#595"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -filelist /Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/Objects-normal/x86_64/OfflineGigaget.LinkFileList -mmacosx-version-min=10.6 -framework Cocoa -framework WebKit -o /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/MacOS/OfflineGigaget0#
 
 CProcessInfoPlistFile /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Info.plist OfflineGigaget-Info.plist
-s319194567.911261
-e319194567.927929
+s320918277.641389
+e320918277.668088
 r1
 xProcessInfoPlistFile
 x/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Info.plist
 xOfflineGigaget-Info.plist
-lSLF07#2@33"Process OfflineGigaget-Info.plist319194567#319194567#0(0"0(0#0#64"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget-Info.plist28992339219775592#331"    cd /Users/sly/Dropbox/work/OfflineGigaget    builtin-infoPlistUtility OfflineGigaget-Info.plist -genpkginfo /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Info.plist0#
+lSLF07#2@33"Process OfflineGigaget-Info.plist320918277#320918277#0(0"0(0#0#64"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget-Info.plist28992339219775592#331"    cd /Users/sly/Dropbox/work/OfflineGigaget    builtin-infoPlistUtility OfflineGigaget-Info.plist -genpkginfo /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app/Contents/Info.plist0#
+
+CProcessPCH /var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch OfflineGigaget_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s320914352.814591
+e320914362.477954
+r1
+xProcessPCH
+x/var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch
+xOfflineGigaget_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile OfflineGigaget_Prefix.pch320914352#320914362#0(0"0(0#0#64"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch7597971037727778816#1062"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -c /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch -o /var/folders/NU/NUUUobwwHnqXMmbQXflrB++++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch0#
 
 CProcessPCH /var/folders/q3/q3jSkYx2G2i+Ykde2l4tSU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch OfflineGigaget_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
 s319194568.372515
@@ -205,11 +319,25 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@36"Precompile OfflineGigaget_Prefix.pch319194568#319194572#0(0"0(0#0#64"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch8594510944#1062"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -c /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch -o /var/folders/q3/q3jSkYx2G2i+Ykde2l4tSU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch0#
 
+CProcessPCH /var/folders/v0/cxxgjf7h33q+3k08n053csf7++++fn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch OfflineGigaget_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s320404505.204445
+e320404505.442513
+r0
+xProcessPCH
+x/var/folders/v0/cxxgjf7h33q+3k08n053csf7++++fn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch
+xOfflineGigaget_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch:6:28: error: Cocoa/Cocoa.h: No such file or directory
+lSLF07#2@36"Precompile OfflineGigaget_Prefix.pch320404505#320404505#0(119"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch:6:28: error: Cocoa/Cocoa.h: No such file or directory1(4@40"Cocoa/Cocoa.h: No such file or directory320404505#0#119#0(6@64"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch319194565#6#0#6#0#28"*: No such file or directory0(0#0#64"/Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch8603397538125540352#1058"    cd /Users/sly/Dropbox/work/OfflineGigaget    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/OfflineGigaget.hmap -F/Users/sly/Dropbox/work/OfflineGigaget/build/Debug -I/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/include -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources/x86_64 -I/Users/sly/Dropbox/work/OfflineGigaget/build/OfflineGigaget.build/Debug/OfflineGigaget.build/DerivedSources -c /Users/sly/Dropbox/work/OfflineGigaget/OfflineGigaget_Prefix.pch -o /var/folders/v0/cxxgjf7h33q+3k08n053csf7++++fn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/OfflineGigaget_Prefix-gjqizhewfqxhxxgiawqhqijvdabv/OfflineGigaget_Prefix.pch.gch1#
+
 CTouch /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app
-s319194572.601139
-e319194572.604875
+s320921454.261603
+e320921454.267126
 r1
 xTouch
 x/Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app
-lSLF07#2@75"Touch /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app319194572#319194572#0(0"0(0#0#0"8607412416#138"    cd /Users/sly/Dropbox/work/OfflineGigaget    /usr/bin/touch -c /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app0#
+lSLF07#2@75"Touch /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app320921454#320921454#0(0"0(0#0#0"8669606880#138"    cd /Users/sly/Dropbox/work/OfflineGigaget    /usr/bin/touch -c /Users/sly/Dropbox/work/OfflineGigaget/build/Debug/OfflineGigaget.app0#
 

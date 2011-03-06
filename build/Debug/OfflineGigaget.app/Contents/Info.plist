@@ -6,8 +6,10 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>OfflineGigaget</string>
+	<key>CFBundleIconFile</key>
+	<string>xunlei.icns</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.yourcompany.OfflineGigaget</string>
+	<string>org.sly.OfflineGigaget</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -18,6 +20,19 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Viewer</string>
+			<key>CFBundleURLName</key>
+			<string>org.sly.magnet</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>magnet</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSMinimumSystemVersion</key>

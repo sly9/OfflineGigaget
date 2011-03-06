@@ -9,7 +9,36 @@
 #import "CoreLogic.h"
 
 @implementation CoreLogic
-@synthesize window,webView,mainWebFrameLoadDelegate;
+@synthesize window,webView,mainWebFrameLoadDelegate,clipboard,lastHandledURL;
+
+- (void)registerMyApp {
+	[[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(getUrl:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
+}
+
+
+
+- (void)getUrl:(NSAppleEventDescriptor *)event withReplyEvent:(NSAppleEventDescriptor *)replyEvent {
+	NSString *url = [[event paramDescriptorForKeyword:keyDirectObject] stringValue];
+    NSLog(@"about to handle url: %@",url);
+    [self.mainWebFrameLoadDelegate handleURLDownload:self.webView forURL:url];
+	// Now you can parse the URL and perform whatever action is needed
+}
+
+- (void)checkClipBoard {
+    NSURL *url = [NSURL URLWithString:[[NSString alloc] initWithData:[self.clipboard dataForType:NSPasteboardTypeString]  encoding:NSUTF8StringEncoding]];
+    if (url==nil) {
+        return;
+    }
+    
+    if ([url isEqual:lastHandledURL]) {
+        return;
+    }
+    self.lastHandledURL = url;
+    [self.mainWebFrameLoadDelegate handleURLDownload:self.webView forURL:[url description]];
+    
+    NSLog(@"check again! %@",url);
+}
+
 
 - (void)setup{
     // prepare web view
@@ -28,6 +57,10 @@
     
     //load homepage
     [[self.webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://lixian.xunlei.com"]]];
+    [self registerMyApp];
+    
+    self.clipboard = [NSPasteboard generalPasteboard];
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(checkClipBoard) userInfo:nil repeats:YES];
 }
 
 - (void) dealloc{
@@ -37,6 +70,5 @@
     [super dealloc];
     
 }
-
 
 @end
