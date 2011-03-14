@@ -10,6 +10,7 @@
 		1359110B1306886A007625C5 /* CoreLogic.m in Sources */ = {isa = PBXBuildFile; fileRef = 1359110A1306886A007625C5 /* CoreLogic.m */; };
 		1359113213068AC2007625C5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1359113113068AC2007625C5 /* WebKit.framework */; };
 		1359123F13068FC3007625C5 /* MainWebFrameLoadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1359123E13068FC3007625C5 /* MainWebFrameLoadDelegate.m */; };
+		136CBC33132DF46C00EB3C6D /* DownloadJob.m in Sources */ = {isa = PBXBuildFile; fileRef = 136CBC32132DF46C00EB3C6D /* DownloadJob.m */; };
 		137A79171320CAEE0040AD46 /* xunlei.icns in Resources */ = {isa = PBXBuildFile; fileRef = 137A79161320CAEE0040AD46 /* xunlei.icns */; };
 		13D3354A132D1570000796D3 /* DownloadDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D33549132D1570000796D3 /* DownloadDelegate.m */; };
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
@@ -28,6 +29,8 @@
 		1359113113068AC2007625C5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		1359123D13068FC3007625C5 /* MainWebFrameLoadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWebFrameLoadDelegate.h; sourceTree = "<group>"; };
 		1359123E13068FC3007625C5 /* MainWebFrameLoadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWebFrameLoadDelegate.m; sourceTree = "<group>"; };
+		136CBC31132DF46C00EB3C6D /* DownloadJob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadJob.h; sourceTree = "<group>"; };
+		136CBC32132DF46C00EB3C6D /* DownloadJob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadJob.m; sourceTree = "<group>"; };
 		137A79161320CAEE0040AD46 /* xunlei.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = xunlei.icns; path = Resources/xunlei.icns; sourceTree = "<group>"; };
 		13D33548132D1570000796D3 /* DownloadDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadDelegate.h; sourceTree = "<group>"; };
 		13D33549132D1570000796D3 /* DownloadDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadDelegate.m; sourceTree = "<group>"; };
@@ -89,6 +92,8 @@
 		132E1B6F132DD8A50024DEA4 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				136CBC31132DF46C00EB3C6D /* DownloadJob.h */,
+				136CBC32132DF46C00EB3C6D /* DownloadJob.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -242,6 +247,7 @@
 				1359110B1306886A007625C5 /* CoreLogic.m in Sources */,
 				1359123F13068FC3007625C5 /* MainWebFrameLoadDelegate.m in Sources */,
 				13D3354A132D1570000796D3 /* DownloadDelegate.m in Sources */,
+				136CBC33132DF46C00EB3C6D /* DownloadJob.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

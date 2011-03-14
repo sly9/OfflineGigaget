@@ -9,17 +9,20 @@
 #import <Cocoa/Cocoa.h>
 #import <WebKit/WebKit.h>
 #import "MainWebFrameLoadDelegate.h"
+#import "DownloadDelegate.h"
 
 @interface CoreLogic : NSObject {
     NSWindow *window;
     WebView *webView;
     MainWebFrameLoadDelegate *mainWebFrameLoadDelegate;
+    DownloadDelegate *downloadDelegate;
     NSPasteboard* clipboard;
     NSURL *lastHandledURL;
 }
 @property (nonatomic, retain) IBOutlet NSWindow *window;
 @property (nonatomic, retain) WebView *webView;
 @property (nonatomic, retain) MainWebFrameLoadDelegate *mainWebFrameLoadDelegate;
+@property (nonatomic, retain) DownloadDelegate *downloadDelegate;
 @property (nonatomic, retain) NSPasteboard* clipboard;
 @property (nonatomic, retain) NSURL *lastHandledURL;
 - (void)setup;

@@ -10,7 +10,18 @@
 
 
 @interface DownloadJob : NSObject {
-    
+    long long fileSize;
+    long long receivedLength;
+    NSURLDownload *download;
+    NSURLRequest *request;
+    NSURLResponse *response;
 }
+
+@property (nonatomic, assign) long long fileSize;
+@property (nonatomic, assign) long long receivedLength;
+@property (nonatomic, retain) NSURLDownload *download;
+@property (nonatomic, retain) NSURLResponse *response;
+
+-(id) initWithDownload:(NSURLDownload *)download;
 
 @end

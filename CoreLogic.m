@@ -9,8 +9,9 @@
 #import "CoreLogic.h"
 
 @implementation CoreLogic
-@synthesize window,webView,mainWebFrameLoadDelegate,clipboard,lastHandledURL;
+@synthesize window,webView,mainWebFrameLoadDelegate,clipboard,lastHandledURL,downloadDelegate;
 
+// register the protocols like "magnet","emule" so that the system will call me when you click the url
 - (void)registerMyApp {
 	[[NSAppleEventManager sharedAppleEventManager] setEventHandler:self andSelector:@selector(getUrl:withReplyEvent:) forEventClass:kInternetEventClass andEventID:kAEGetURL];
 }
@@ -54,6 +55,11 @@
     MainWebFrameLoadDelegate *aMainWebFrameLoadDelegate = [[[MainWebFrameLoadDelegate alloc] init] autorelease];
     self.mainWebFrameLoadDelegate = aMainWebFrameLoadDelegate;
     [self.webView setFrameLoadDelegate:aMainWebFrameLoadDelegate];
+    
+    self.downloadDelegate = [[[DownloadDelegate alloc] init] autorelease];
+    [self.webView setDownloadDelegate:self.downloadDelegate];
+    [self.webView setPolicyDelegate:aMainWebFrameLoadDelegate];
+    [self.webView setResourceLoadDelegate:aMainWebFrameLoadDelegate];
     
     //load homepage
     [[self.webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://lixian.xunlei.com"]]];

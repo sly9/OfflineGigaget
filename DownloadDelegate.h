@@ -7,10 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
+#import "DownloadJob.h"
 
-
-@interface DownloadDelegate : NSObject {
-    
+@interface DownloadDelegate : WebDownload {
+    NSMutableArray *downloads;    
 }
+
+@property (nonatomic, retain) NSMutableArray *downloads;
+
+-(DownloadJob *) getJobForDownload:(NSURLDownload *)download;
 
 @end

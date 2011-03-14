@@ -39,6 +39,25 @@
     }
 }
 
+- (BOOL)respondsToSelector:(SEL)aSelector
+{
+    NSString *methodName = NSStringFromSelector(aSelector);
+    NSLog(@"respondsToSelector: %@", methodName);
+    return [super respondsToSelector:aSelector];
+}
+
+- (void)webView:(WebView *)webView decidePolicyForNavigationAction:(NSDictionary *)actionInformation request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id < WebPolicyDecisionListener >)listener{
+//    NSLog(@"webView:decidePolicyForNavigationAction:request:frame:decisionListener:, %@ , %@, %@, %@",actionInformation, request, frame, listener);
+    [listener use];
+}
+
+- (void)webView:(WebView *)webView decidePolicyForMIMEType:(NSString *)type request:(NSURLRequest *)request frame:(WebFrame *)frame decisionListener:(id < WebPolicyDecisionListener >)listener{
+    NSLog(@"webView:decidePolicyForNavigationAction:request:frame:decisionListener:, %@ , %@, %@, %@",type, request, frame, listener);
+    if([type compare:@"text/html"] == NSOrderedSame)
+        [listener use];
+    else
+        [listener download];
+}
 
 
 @end
