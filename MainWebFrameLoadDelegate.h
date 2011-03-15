@@ -14,4 +14,5 @@
 }
 - (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame;
 - (void) handleURLDownload:(WebView *)webView forURL:(NSString *)url;
+- (void) handleFileUploadForWebView:(WebView *)webView :(NSString *)filename;
 @end

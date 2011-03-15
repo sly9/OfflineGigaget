@@ -17,6 +17,7 @@
     NSManagedObjectModel *managedObjectModel;
     NSManagedObjectContext *managedObjectContext;
     CoreLogic *core;
+    NSMutableArray *filesToOpen;
 }
 
 @property (nonatomic, retain) IBOutlet NSWindow *window;
@@ -24,6 +25,7 @@
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) CoreLogic *core;
+@property (nonatomic, retain) NSMutableArray *filesToOpen;
 
 - (IBAction)saveAction:sender;
 

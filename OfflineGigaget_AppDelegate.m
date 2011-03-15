@@ -10,7 +10,7 @@
 
 @implementation OfflineGigaget_AppDelegate
 
-@synthesize window,core;
+@synthesize window,core,filesToOpen;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification{
     NSLog(@"did finish launching");
@@ -19,6 +19,11 @@
     self.core.window = window;
     
     [self.core setup];
+    
+    if (self.filesToOpen == nil) {
+        self.filesToOpen = [NSMutableArray array];
+    }
+    
     
     [aCore release];
 }
@@ -204,6 +209,13 @@
 
     return NSTerminateNow;
 }
+
+- (BOOL)application:(NSApplication *)theApplication openFile:(NSString *)filename{
+    NSLog(@"open file: %@",filename);
+    self.filesToOpen = [NSMutableArray arrayWithObjects:filename, nil];
+    return YES;
+}
+
 
 
 /**

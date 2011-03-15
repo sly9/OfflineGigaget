@@ -7,6 +7,7 @@
 //
 
 #import "CoreLogic.h"
+#import "OfflineGigaget_AppDelegate.h"
 
 @implementation CoreLogic
 @synthesize window,webView,mainWebFrameLoadDelegate,clipboard,lastHandledURL,downloadDelegate;
@@ -40,6 +41,22 @@
     NSLog(@"check again! %@",url);
 }
 
+- (void) checkFileOpen {
+    
+    //check app delegate to find out if the app is trying to open a torrent file
+    NSApplication *applicatioin = [NSApplication sharedApplication];
+    OfflineGigaget_AppDelegate *appDelegate =(OfflineGigaget_AppDelegate *) [applicatioin delegate];
+    if ([appDelegate.filesToOpen count]>0) {
+        NSString *filename = [appDelegate.filesToOpen objectAtIndex:0];
+        [self.mainWebFrameLoadDelegate handleFileUploadForWebView:self.webView :filename];
+        [appDelegate.filesToOpen removeObject:filename];
+    }
+
+    
+}
+
+
+
 
 - (void)setup{
     // prepare web view
@@ -60,6 +77,7 @@
     [self.webView setDownloadDelegate:self.downloadDelegate];
     [self.webView setPolicyDelegate:aMainWebFrameLoadDelegate];
     [self.webView setResourceLoadDelegate:aMainWebFrameLoadDelegate];
+    [self.webView setUIDelegate:aMainWebFrameLoadDelegate];
     
     //load homepage
     [[self.webView mainFrame] loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://lixian.xunlei.com"]]];
@@ -67,6 +85,8 @@
     
     self.clipboard = [NSPasteboard generalPasteboard];
     [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(checkClipBoard) userInfo:nil repeats:YES];
+    [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(checkFileOpen) userInfo:nil repeats:YES];
+    
 }
 
 - (void) dealloc{

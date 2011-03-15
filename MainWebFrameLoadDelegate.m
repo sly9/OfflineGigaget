@@ -11,6 +11,7 @@
 
 @implementation MainWebFrameLoadDelegate
 
+
 - (void) handleLogin:(WebView *)webView{
     DOMDocument *document = [webView mainFrameDocument];
     DOMElement *userNameInput = [document querySelector:@"#u"];
@@ -59,5 +60,20 @@
         [listener download];
 }
 
+- (void) handleFileUploadForWebView:(WebView *)webView :(NSString *)filename{
+    [[webView windowScriptObject] evaluateWebScript:@"add_task_new(1);"];
+    DOMDocument *document = [webView mainFrameDocument];
+    DOMElement *userNameInput = [document querySelector:@"#filepath"];
+//    NSLog([userNameInput getAttribute:@"value"]);
+    [userNameInput setAttribute:@"value" value:filename];
+//    NSLog([userNameInput getAttribute:@"value"]);    
+    [[webView windowScriptObject] evaluateWebScript:@"document.getElementById('filepath').click();"];
+    [[webView windowScriptObject] evaluateWebScript:@"fileInputChange();"];
+}
+
+- (void)webView:(WebView *)sender runOpenPanelForFileButtonWithResultListener:(id < WebOpenPanelResultListener >)resultListener{
+    NSLog(@"aaa!");
+    [resultListener chooseFilename:@"/Volumes/Storage/Downloads/Pixelmator_(Crack_Only_-_All_Versions).5111940.TPB.torrent"];
+}
 
 @end
