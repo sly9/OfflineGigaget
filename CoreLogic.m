@@ -49,7 +49,6 @@
     if ([appDelegate.filesToOpen count]>0) {
         NSString *filename = [appDelegate.filesToOpen objectAtIndex:0];
         [self.mainWebFrameLoadDelegate handleFileUploadForWebView:self.webView :filename];
-        [appDelegate.filesToOpen removeObject:filename];
     }
 
     

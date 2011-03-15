@@ -7,7 +7,7 @@
 //
 
 #import "MainWebFrameLoadDelegate.h"
-
+#import "OfflineGigaget_AppDelegate.h"
 
 @implementation MainWebFrameLoadDelegate
 
@@ -72,8 +72,13 @@
 }
 
 - (void)webView:(WebView *)sender runOpenPanelForFileButtonWithResultListener:(id < WebOpenPanelResultListener >)resultListener{
-    NSLog(@"aaa!");
-    [resultListener chooseFilename:@"/Volumes/Storage/Downloads/Pixelmator_(Crack_Only_-_All_Versions).5111940.TPB.torrent"];
+    NSApplication *applicatioin = [NSApplication sharedApplication];
+    OfflineGigaget_AppDelegate *appDelegate =(OfflineGigaget_AppDelegate *) [applicatioin delegate];
+    if ([appDelegate.filesToOpen count]>0) {
+        NSString *filename = [appDelegate.filesToOpen objectAtIndex:0];
+        [resultListener chooseFilename:filename];
+        [appDelegate.filesToOpen removeObject:filename];
+    }
 }
 
 @end
